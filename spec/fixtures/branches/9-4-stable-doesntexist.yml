@@ -1,0 +1,154 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Faran/repository/branches/9-4-stable-doesntexist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 03 Aug 2017 19:53:27 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '34'
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 1e647a1f-9c52-4f5f-b7c2-5e0688352eaa
+      X-Runtime:
+      - '0.311354'
+    body:
+      encoding: UTF-8
+      string: '{"message":"404 Branch Not Found"}'
+    http_version: 
+  recorded_at: Thu, 03 Aug 2017 19:53:28 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Frioos/repository/branches/9-4-stable-doesntexist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 08 Mar 2018 18:32:55 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '30'
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 4022af61-fbd0-4103-a5ba-0940f0fc9131
+      X-Runtime:
+      - '0.070732'
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '2'
+      Ratelimit-Remaining:
+      - '598'
+      Ratelimit-Reset:
+      - '1520534035'
+      Ratelimit-Resettime:
+      - Fri, 08 Mar 2018 18:33:55 GMT
+    body:
+      encoding: UTF-8
+      string: '{"message":"401 Unauthorized"}'
+    http_version: 
+  recorded_at: Sun, 17 Jul 1983 18:30:00 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Faran/repository/branches/9-4-stable-doesntexist
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 09 Mar 2018 10:42:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '34'
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 2c36a254-148c-4617-af0e-2a0a9f8de2ed
+      X-Runtime:
+      - '0.097866'
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '9'
+      Ratelimit-Remaining:
+      - '591'
+      Ratelimit-Reset:
+      - '1520592224'
+      Ratelimit-Resettime:
+      - Sat, 09 Mar 2018 10:43:44 GMT
+    body:
+      encoding: UTF-8
+      string: '{"message":"404 Branch Not Found"}'
+    http_version: 
+  recorded_at: Fri, 01 Jul 1983 18:30:00 GMT
+recorded_with: VCR 4.0.0

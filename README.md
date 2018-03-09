@@ -3,6 +3,8 @@
 This project includes several Rake tasks to automate parts of the release
 process.
 
+![Release Mgmt](https://gitlab.com/rioos/poochi/blob/master/images/masco.jpg)
+
 ## Setup
 
 1. Install the required dependencies with Bundler:

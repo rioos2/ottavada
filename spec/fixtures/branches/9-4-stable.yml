@@ -1,0 +1,161 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Faran/repository/branches/9-4-stable
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 03 Aug 2017 19:53:29 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '607'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"c2518e70b96f744394611600beb1e336"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - ef4dacc7-5765-44c4-a17f-851ac629a43c
+      X-Runtime:
+      - '0.561116'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"name":"9-4-stable","commit":{"id":"b125d211386acf1c53e3d714055653f9386b1c2b","short_id":"b125d211","title":"Update
+        VERSION to 9.4.3","created_at":"2017-07-31T22:49:33.000-05:00","parent_ids":["3379b4fa1b779e5bc8a9d1d7fc484069cc196b49"],"message":"Update
+        VERSION to 9.4.3\n","author_name":"Jose Ivan Vargas","author_email":"jvargas@gitlab.com","authored_date":"2017-07-31T22:49:33.000-05:00","committer_name":"Jose
+        Ivan Vargas","committer_email":"jvargas@gitlab.com","committed_date":"2017-07-31T22:49:33.000-05:00"},"merged":false,"protected":true,"developers_can_push":false,"developers_can_merge":false}'
+    http_version: 
+  recorded_at: Thu, 03 Aug 2017 19:53:30 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Frioos/repository/branches/9-4-stable
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 08 Mar 2018 18:32:53 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '30'
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 1acd8061-5590-45f3-aa33-ecc6efaa8d76
+      X-Runtime:
+      - '0.056733'
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '1'
+      Ratelimit-Remaining:
+      - '599'
+      Ratelimit-Reset:
+      - '1520534033'
+      Ratelimit-Resettime:
+      - Fri, 08 Mar 2018 18:33:53 GMT
+    body:
+      encoding: UTF-8
+      string: '{"message":"401 Unauthorized"}'
+    http_version: 
+  recorded_at: Sun, 17 Jul 1983 18:30:00 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Faran/repository/branches/9-4-stable
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 09 Mar 2018 10:42:45 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '34'
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - f1ab668a-6012-4ba0-a047-9365b995dbdf
+      X-Runtime:
+      - '0.103802'
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '10'
+      Ratelimit-Remaining:
+      - '590'
+      Ratelimit-Reset:
+      - '1520592225'
+      Ratelimit-Resettime:
+      - Sat, 09 Mar 2018 10:43:45 GMT
+    body:
+      encoding: UTF-8
+      string: '{"message":"404 Branch Not Found"}'
+    http_version: 
+  recorded_at: Fri, 01 Jul 1983 18:30:00 GMT
+recorded_with: VCR 4.0.0

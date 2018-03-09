@@ -1,0 +1,390 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://gitlab.com/api/v4/projects/rioos%2Faran/merge_requests
+    body:
+      encoding: UTF-8
+      string: title=WIP%3A%20Testing%20release-tools&description=&assignee_id=654619&labels=&source_branch=testing-release-tools&target_branch=master&milestone_id=272462
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 03 Aug 2017 21:27:38 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1370'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4837325b75291471ddb1e8d5478d447a"
+      Vary:
+      - Origin
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 5da83f7e-b527-458b-96f6-d07f22b9b7cb
+      X-Runtime:
+      - '56.234545'
+      Strict-Transport-Security:
+      - max-age=31536000
+    body:
+      encoding: UTF-8
+      string: '{"id":4549924,"iid":13294,"project_id":13083,"title":"WIP: Testing
+        release-tools","description":"","state":"opened","created_at":"2017-08-03T21:26:42.337Z","updated_at":"2017-08-03T21:26:42.337Z","target_branch":"master","source_branch":"testing-release-tools","upvotes":0,"downvotes":0,"author":{"name":"James
+        Edwards-Jones","gitlabname":"jamedjo","id":654619,"state":"active","avatar_url":"https://gitlab.com/uploads/-/system/gitlab/avatar/654619/avatar.png","web_url":"https://gitlab.com/jamedjo"},"assignee":{"name":"James
+        Edwards-Jones","gitlabname":"jamedjo","id":654619,"state":"active","avatar_url":"https://gitlab.com/uploads/-/system/gitlab/avatar/654619/avatar.png","web_url":"https://gitlab.com/jamedjo"},"source_project_id":13083,"target_project_id":13083,"labels":[],"work_in_progress":true,"milestone":{"id":272462,"iid":37,"project_id":13083,"group_id":null,"title":"2.0","description":"","state":"active","created_at":"2017-02-24T13:49:25.412Z","updated_at":"2017-04-07T14:52:33.376Z","due_date":"2017-07-21","start_date":"2017-06-08"},"merge_when_pipeline_succeeds":false,"merge_status":"unchecked","sha":null,"merge_commit_sha":null,"gitlab_notes_count":0,"approvals_before_merge":null,"should_remove_source_branch":null,"force_remove_source_branch":null,"squash":false,"web_url":"https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/13294","subscribed":true}'
+    http_version: 
+  recorded_at: Thu, 03 Aug 2017 21:27:40 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/groups/gitlab-org/milestones
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Wed, 03 Jan 2018 18:38:05 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2714'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"a3b0b813049e38739f51831f8dbc032a"
+      Link:
+      - <https://gitlab.com/api/v4/groups/gitlab-org/milestones?id=gitlab-org&page=1&per_page=20&state=all>;
+        rel="first", <https://gitlab.com/api/v4/groups/gitlab-org/milestones?id=gitlab-org&page=1&per_page=20&state=all>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 77367c24-5a8b-44f3-868c-03f358b3923f
+      X-Runtime:
+      - '0.227178'
+      X-Total:
+      - '11'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '7'
+      Ratelimit-Remaining:
+      - '593'
+      Ratelimit-Reset:
+      - '1515004745'
+      Ratelimit-Resettime:
+      - Thu, 03 Jan 2018 18:39:05 GMT
+    body:
+      encoding: UTF-8
+      string: '[{"id":481948,"iid":1,"project_id":3603592,"title":"2.0","description":"","state":"active","created_at":"2018-03-09T10:59:25.878Z","updated_at":"2018-03-09T10:59:25.878Z","due_date":null,"start_date":null}]'
+    http_version: 
+  recorded_at: Wed, 03 Jan 2018 18:38:05 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Frioos/milestones
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 401
+      message: Unauthorized
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Thu, 08 Mar 2018 18:32:52 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '30'
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - cd72de27-4727-4e55-b1cf-7ed0c4ad99f5
+      X-Runtime:
+      - '0.071606'
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '2'
+      Ratelimit-Remaining:
+      - '598'
+      Ratelimit-Reset:
+      - '1520534032'
+      Ratelimit-Resettime:
+      - Fri, 08 Mar 2018 18:33:52 GMT
+    body:
+      encoding: UTF-8
+      string: '{"message":"401 Unauthorized"}'
+    http_version: 
+  recorded_at: Sun, 17 Jul 1983 18:30:00 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Faran/milestones
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 09 Mar 2018 10:42:31 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v4/projects/rioos%2Faran/milestones?id=rioos%2Faran&page=1&per_page=20&state=all>;
+        rel="first", <https://gitlab.com/api/v4/projects/rioos%2Faran/milestones?id=rioos%2Faran&page=1&per_page=20&state=all>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - b850e056-e0e1-477d-8697-bc6b49b0fec1
+      X-Runtime:
+      - '0.082998'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '1'
+      Ratelimit-Remaining:
+      - '599'
+      Ratelimit-Reset:
+      - '1520592211'
+      Ratelimit-Resettime:
+      - Sat, 09 Mar 2018 10:43:31 GMT
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Fri, 01 Jul 1983 18:30:00 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/groups/rioos/milestones
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 09 Mar 2018 10:42:33 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v4/groups/rioos/milestones?id=rioos&page=1&per_page=20&state=all>;
+        rel="first", <https://gitlab.com/api/v4/groups/rioos/milestones?id=rioos&page=1&per_page=20&state=all>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 97bd9b58-231b-41a6-9c10-0f8f2ffdbf4f
+      X-Runtime:
+      - '0.371782'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '2'
+      Ratelimit-Remaining:
+      - '598'
+      Ratelimit-Reset:
+      - '1520592213'
+      Ratelimit-Resettime:
+      - Sat, 09 Mar 2018 10:43:33 GMT
+    body:
+      encoding: UTF-8
+      string: '[{"id":481948,"iid":1,"project_id":3603592,"title":"2.0","description":"","state":"active","created_at":"2018-03-09T10:59:25.878Z","updated_at":"2018-03-09T10:59:25.878Z","due_date":null,"start_date":null}]'
+    http_version: 
+  recorded_at: Fri, 01 Jul 1983 18:30:00 GMT
+- request:
+    method: post
+    uri: https://gitlab.com/api/v4/projects/rioos%2Faran/merge_requests
+    body:
+      encoding: UTF-8
+      string: title=Upstream%20MR&description=Hello%20world&assignee_id=42&labels=upstream&source_branch=feature&target_branch=master&milestone_id=481948&remove_source_branch=true
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Fri, 09 Mar 2018 11:19:44 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '1309'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"4e574a9607fed61c2359744228b1bcc1"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - f7a3bbfa-65f0-4500-9a10-50441de088c0
+      X-Runtime:
+      - '2.213479'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '1'
+      Ratelimit-Remaining:
+      - '599'
+      Ratelimit-Reset:
+      - '1520594444'
+      Ratelimit-Resettime:
+      - Sat, 09 Mar 2018 11:20:44 GMT
+    body:
+      encoding: UTF-8
+      string: '{"id":8282824,"iid":342,"project_id":3603592,"title":"Upstream MR","description":"Hello
+        world","state":"opened","created_at":"2018-03-09T11:19:42.952Z","updated_at":"2018-03-09T11:19:42.952Z","target_branch":"master","source_branch":"feature","upvotes":0,"downvotes":0,"author":{"id":2091520,"name":"Rio/OS
+        Bot","username":"rioosdolphin","state":"active","avatar_url":"https://assets.gitlab-static.net/uploads/-/system/user/avatar/2091520/avatar.png","web_url":"https://gitlab.com/rioosdolphin"},"assignee":null,"source_project_id":3603592,"target_project_id":3603592,"labels":["upstream"],"work_in_progress":false,"milestone":{"id":481948,"iid":1,"project_id":3603592,"title":"2.0","description":"","state":"active","created_at":"2018-03-09T10:59:25.878Z","updated_at":"2018-03-09T10:59:25.878Z","due_date":null,"start_date":null},"merge_when_pipeline_succeeds":false,"merge_status":"cannot_be_merged","sha":null,"merge_commit_sha":null,"user_notes_count":0,"approvals_before_merge":null,"discussion_locked":null,"should_remove_source_branch":null,"force_remove_source_branch":true,"squash":false,"web_url":"https://gitlab.com/rioos/aran/merge_requests/342","time_stats":{"time_estimate":0,"total_time_spent":0,"human_time_estimate":null,"human_total_time_spent":null},"subscribed":true,"changes_count":null}'
+    http_version: 
+  recorded_at: Mon, 30 Nov 2015 18:30:03 GMT
+recorded_with: VCR 4.0.0
