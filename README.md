@@ -3,7 +3,7 @@
 This project includes several Rake tasks to automate parts of the release
 process.
 
-![Release Mgmt](https://gitlab.com/rioos/poochi/blob/master/images/masco.jpg)
+![Release Mgmt](https://gitlab.com/rioos/poochi/raw/master/images/masco.jpg)
 
 ## Setup
 
