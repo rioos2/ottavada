@@ -84,9 +84,9 @@ describe Release::RioosRelease, :silence_stdout do
               expect(ob_repository.head.name).to eq "refs/heads/#{branch}"
               expect(ob_repository.tags[ob_version]).to be_nil
               expect(ob_repository).to have_version.at(version)
-              expect(ob_repository).to have_version('shell').at('2.3.0')
-              expect(ob_repository).to have_version('workhorse').at('3.4.0')
-              expect(ob_repository).to have_version('pages').at('4.5.0')
+              expect(ob_repository).to have_version('aran').at('2.3.0')
+              expect(ob_repository).to have_version('nilavu').at('3.4.0')
+              expect(ob_repository).to have_version('beedi').at('5.6.0')
             end
           end
         end
@@ -123,10 +123,9 @@ describe Release::RioosRelease, :silence_stdout do
               expect(ob_repository.head.name).to eq "refs/heads/#{branch}"
               expect(ob_repository.tags[ob_version]).to be_nil
               expect(ob_repository).to have_version.at(version)
-              expect(ob_repository).to have_version('shell').at('2.3.0')
-              expect(ob_repository).to have_version('workhorse').at('3.4.0')
-              expect(ob_repository).to have_version('pages').at('4.5.0')
-              expect(ob_repository).to have_version('gitaly').at('5.6.0')
+              expect(ob_repository).to have_version('aran').at('2.3.0')
+              expect(ob_repository).to have_version('nilavu').at('3.4.0')
+              expect(ob_repository).to have_version('beedi').at('5.6.0')
               
             end
           end

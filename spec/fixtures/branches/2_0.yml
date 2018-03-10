@@ -62,4 +62,59 @@ http_interactions:
         merge request rioos/aran!341","author_name":"indykish","author_email":"nkishore@megam.io","authored_date":"2018-03-09T05:08:15.000+00:00","committer_name":"indykish","committer_email":"nkishore@megam.io","committed_date":"2018-03-09T05:08:15.000+00:00"},"merged":false,"protected":false,"developers_can_push":false,"developers_can_merge":false}'
     http_version: 
   recorded_at: Fri, 09 Mar 2018 11:08:01 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Frelaran/repository/branches/2.0
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 10 Mar 2018 17:07:23 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '34'
+      Cache-Control:
+      - no-cache
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 2ccb6432-0a3c-43ed-9805-93b7baa0373f
+      X-Runtime:
+      - '0.105261'
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '3'
+      Ratelimit-Remaining:
+      - '597'
+      Ratelimit-Reset:
+      - '1520701703'
+      Ratelimit-Resettime:
+      - Sun, 10 Mar 2018 17:08:23 GMT
+    body:
+      encoding: UTF-8
+      string: '{"message":"404 Branch Not Found"}'
+    http_version: 
+  recorded_at: Fri, 01 Jul 1983 18:30:00 GMT
 recorded_with: VCR 4.0.0

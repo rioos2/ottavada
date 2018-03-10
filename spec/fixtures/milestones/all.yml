@@ -572,4 +572,79 @@ http_interactions:
       string: "[]"
     http_version: 
   recorded_at: Mon, 29 Jan 2018 18:30:01 GMT
+- request:
+    method: get
+    uri: https://gitlab.com/api/v4/projects/rioos%2Frelaran/milestones?state=active
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 10 Mar 2018 17:07:25 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '2'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"d751713988987e9331980363e24189ce"
+      Link:
+      - <https://gitlab.com/api/v4/projects/rioos%2Frelaran/milestones?id=rioos%2Frelaran&page=1&per_page=20&state=active>;
+        rel="first", <https://gitlab.com/api/v4/projects/rioos%2Frelaran/milestones?id=rioos%2Frelaran&page=1&per_page=20&state=active>;
+        rel="last"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Next-Page:
+      - ''
+      X-Page:
+      - '1'
+      X-Per-Page:
+      - '20'
+      X-Prev-Page:
+      - ''
+      X-Request-Id:
+      - 59cd877d-f382-4cf3-9c1b-e7f42d6f1df1
+      X-Runtime:
+      - '0.192795'
+      X-Total:
+      - '0'
+      X-Total-Pages:
+      - '1'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '1'
+      Ratelimit-Remaining:
+      - '599'
+      Ratelimit-Reset:
+      - '1520701705'
+      Ratelimit-Resettime:
+      - Sun, 10 Mar 2018 17:08:25 GMT
+    body:
+      encoding: UTF-8
+      string: "[]"
+    http_version: 
+  recorded_at: Mon, 02 Aug 2032 18:30:01 GMT
 recorded_with: VCR 4.0.0
