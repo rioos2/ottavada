@@ -17,9 +17,9 @@ class ReleaseFixture
       message: 'Add empty README.md'
     )
     commit_blobs(
-      'GITLAB_SHELL_VERSION'     => "2.2.2\n",
-      'GITLAB_WORKHORSE_VERSION' => "3.3.3\n",
-      'GITALY_SERVER_VERSION'    => "5.5.5\n",
+      'ARAN_VERSION'     => "2.2.2\n",
+      'NILAVU_VERSION' => "3.3.3\n",
+      'BEEDI_VERSION'    => "5.5.5\n",
       'VERSION'                  => "1.1.1\n"
     )
 
@@ -39,10 +39,10 @@ class ReleaseFixture
 
     # Bump the versions in master
     commit_blobs(
-      'GITALY_SERVER_VERSION'    => "5.6.0\n",
+      'BEEDI_VERSION'    => "5.6.0\n",
       'GITLAB_PAGES_VERSION'     => "4.5.0\n",
-      'GITLAB_SHELL_VERSION'     => "2.3.0\n",
-      'GITLAB_WORKHORSE_VERSION' => "3.4.0\n",
+      'ARAN_VERSION'     => "2.3.0\n",
+      'NILAVU_VERSION' => "3.4.0\n",
       'VERSION'                  => "1.2.0\n"
     )
 
@@ -60,9 +60,9 @@ class OmnibusReleaseFixture
   def build_fixture(options = {})
     commit_blob(path: 'README.md', content: '', message: 'Add empty README.md')
     commit_blobs(
-      'GITLAB_SHELL_VERSION'     => "2.2.2\n",
-      'GITLAB_WORKHORSE_VERSION' => "3.3.3\n",
-      'GITALY_SERVER_VERSION'    => "5.5.5\n",
+      'ARAN_VERSION'     => "2.2.2\n",
+      'NILAVU_VERSION' => "3.3.3\n",
+      'BEEDI_VERSION'    => "5.5.5\n",
       'VERSION'                  => "1.9.24\n"
     )
 
@@ -76,8 +76,8 @@ class OmnibusReleaseFixture
 
     commit_blobs(
       'GITLAB_PAGES_VERSION'     => "master\n",
-      'GITLAB_SHELL_VERSION'     => "2.2.2\n",
-      'GITLAB_WORKHORSE_VERSION' => "3.3.3\n",
+      'ARAN_VERSION'     => "2.2.2\n",
+      'NILAVU_VERSION' => "3.3.3\n",
       'VERSION'                  => "1.9.24\n"
     )
 
@@ -86,8 +86,8 @@ class OmnibusReleaseFixture
     # Bump the versions in master
     commit_blobs(
       'GITLAB_PAGES_VERSION'     => "master\n",
-      'GITLAB_SHELL_VERSION'     => "master\n",
-      'GITLAB_WORKHORSE_VERSION' => "master\n",
+      'ARAN_VERSION'     => "master\n",
+      'NILAVU_VERSION' => "master\n",
       'VERSION'                  => "master\n"
     )
   end

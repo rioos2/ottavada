@@ -64,9 +64,8 @@ module Release
     end
 
     def version_files
-      files = %w[GITLAB_SHELL_VERSION GITLAB_WORKHORSE_VERSION]
-      files << 'GITLAB_PAGES_VERSION' if expect_pages_version_file?
-      files << 'GITALY_SERVER_VERSION' if expect_gitaly_version_file?
+      files = %w[ARAN_VERSION NILAVU_VERSION]
+      files << 'BEEDI_VERSION' 
       files << 'VERSION' # Always update VERSION last
       files
     end

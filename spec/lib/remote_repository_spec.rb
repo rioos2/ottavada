@@ -159,14 +159,14 @@ describe RemoteRepository do
     it 'creates and checks out a new branch' do
       subject.checkout_new_branch('new-branch')
 
-      expect(rugged_repo).to have_version('pages').at('4.5.0')
+      expect(rugged_repo).to have_version('aran').at('2.3.0')
     end
 
     context 'with a given base branch' do
       it 'creates and checks out a new branch based on the given base branch' do
         subject.checkout_new_branch('new-branch', base: '9-1-stable')
 
-        expect(rugged_repo).to have_version('pages').at('4.4.4')
+        expect(rugged_repo).to have_version('beedi').at('5.5.5')
       end
     end
   end
@@ -230,7 +230,7 @@ describe RemoteRepository do
             amend: true)
         ).to be(true)
 
-        expect(rugged_repo).to have_commit_title('Add GITLAB_SHELL_VERSION, GITLAB_WORKHORSE_VERSION, GITALY_SERVER_VERSION, VERSION')
+        expect(rugged_repo).to have_commit_title('Add ARAN_VERSION, NILAVU_VERSION, BEEDI_VERSION, VERSION')
         expect(rugged_repo).to have_blob('README.md').with('Cool')
         expect(rugged_repo).to have_blob('CONTRIBUTING.md').with('Be nice!')
       end

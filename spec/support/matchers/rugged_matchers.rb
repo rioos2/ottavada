@@ -202,17 +202,15 @@ module RuggedMatchers
   # Examples:
   #
   #   expect(repository).to have_version.at('1.2.3')
-  #   expect(repository).to have_version('pages').at('2.3.4')
-  #   expect(repository).to have_version('workhorse').at('3.4.5')
-  #   expect(repository).not_to have_version('pages')
+  #   expect(repository).to have_version('aran').at('2.3.4')
+  #   expect(repository).to have_version('nilavu').at('3.4.5')
+  #   expect(repository).not_to have_version('beedi')
   matcher :have_version do |file_path|
     def normalize_path(file_path)
       if file_path.nil?
         'VERSION'
-      elsif file_path.eql?('gitaly')
-        'GITALY_SERVER_VERSION'
       else
-        "GITLAB_#{file_path.upcase}_VERSION"
+        "#{file_path.upcase}_VERSION"
       end
     end
 
