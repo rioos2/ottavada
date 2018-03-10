@@ -19,7 +19,9 @@ class RemoteRepository
       .last
       .sub(/\.git\Z/, '')
 
-    new(File.join('/tmp', repository_name), remotes, global_depth: global_depth)
+    build_home  = ENV['RIOOS_REMOTES_HOME'] || '/tmp'
+    
+    new(File.join(build_home, repository_name), remotes, global_depth: global_depth)
   end
 
   attr_reader :path, :remotes, :canonical_remote, :global_depth
