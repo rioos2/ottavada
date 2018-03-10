@@ -167,4 +167,65 @@ http_interactions:
         rioos/aran!169","author_name":"indykish","author_email":"nkishore@megam.io","authored_date":"2017-11-23T14:59:36.000Z","committer_name":"indykish","committer_email":"nkishore@megam.io","committed_date":"2017-11-23T14:59:36.000Z"},"merged":true,"protected":false,"developers_can_push":false,"developers_can_merge":false}'
     http_version: 
   recorded_at: Fri, 01 Jul 1983 18:30:00 GMT
+- request:
+    method: post
+    uri: https://gitlab.com/api/v4/projects/rioos%2Frelaran/repository/branches
+    body:
+      encoding: UTF-8
+      string: branch=test-branch-from-release-tools&ref=master
+    headers:
+      Accept:
+      - application/json
+      Content-Type:
+      - application/x-www-form-urlencoded
+      User-Agent:
+      - Gitlab Ruby Gem 4.3.0
+      Private-Token:
+      - "[GITLAB_API_PRIVATE_TOKEN]"
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - nginx
+      Date:
+      - Sat, 10 Mar 2018 17:07:20 GMT
+      Content-Type:
+      - application/json
+      Content-Length:
+      - '531'
+      Cache-Control:
+      - max-age=0, private, must-revalidate
+      Etag:
+      - W/"88cddbe10b0e9cf0fafc4a16d587a220"
+      Vary:
+      - Origin
+      X-Content-Type-Options:
+      - nosniff
+      X-Frame-Options:
+      - SAMEORIGIN
+      X-Request-Id:
+      - 24edd784-e2dc-4be5-ad98-1fc5caa359d1
+      X-Runtime:
+      - '0.940696'
+      Strict-Transport-Security:
+      - max-age=31536000
+      Ratelimit-Limit:
+      - '600'
+      Ratelimit-Observed:
+      - '1'
+      Ratelimit-Remaining:
+      - '599'
+      Ratelimit-Reset:
+      - '1520701700'
+      Ratelimit-Resettime:
+      - Sun, 10 Mar 2018 17:08:20 GMT
+    body:
+      encoding: UTF-8
+      string: '{"name":"test-branch-from-release-tools","commit":{"id":"b270ca8b6874fc6b6ccaa389329847f798d4e9a6","short_id":"b270ca8b","title":"Add
+        README.md","created_at":"2018-03-10T16:58:24.000Z","parent_ids":[],"message":"Add
+        README.md","author_name":"indykish","author_email":"nkishore@megam.io","authored_date":"2018-03-10T16:58:24.000Z","committer_name":"indykish","committer_email":"nkishore@megam.io","committed_date":"2018-03-10T16:58:24.000Z"},"merged":false,"protected":false,"developers_can_push":false,"developers_can_merge":false}'
+    http_version: 
+  recorded_at: Fri, 01 Jul 1983 18:30:00 GMT
 recorded_with: VCR 4.0.0
