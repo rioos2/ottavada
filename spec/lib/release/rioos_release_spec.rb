@@ -120,8 +120,7 @@ describe Release::RioosRelease, :silence_stdout do
               
 
               # Omnibus-GitLab expectations
-              expect(ob_repository.head.name).to eq "refs/heads/#{branch}"
-              expect(ob_repository.tags[ob_version]).to be_nil
+              expect(ob_repository.head.name).to eq "refs/heads/#{branch}"              
               expect(ob_repository).to have_version.at(version)
               expect(ob_repository).to have_version('aran').at('2.3.0')
               expect(ob_repository).to have_version('nilavu').at('3.4.0')
