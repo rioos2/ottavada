@@ -6,24 +6,13 @@ class OmnibusGitlabVersion < Version
     \.(?<minor>\d+)
     (\.(?<patch>\d+))?
     (\+)?
-    (?<rc>rc(?<rc_number>\d*))?
-    (\.)?
-    (?<edition>ce|ee)?
+    (?<rc>rc(?<rc_number>\d*))?    
     (\.\d+)?\z
   }x
 
-  def ee?
-    edition == 'ee'
-  end
-
-  def edition
-    @edition ||= extract_from_version(:edition, fallback: 'ce')
-  end
-
   def tag
-    str = "#{to_patch}+"
+    str = "#{to_patch}."
     str << "rc#{rc}." if rc?
-    str << (ee? ? 'ee' : 'ce')
-    str << '.0'
+    str << '0'
   end
 end
