@@ -1,7 +1,7 @@
 require_relative 'base_project'
 
 module Project
-  class Rioos < BaseProject
+  class Beedi < BaseProject
     REMOTES = {      
       gitlab: 'git@gitlab.com:rioos/relbeedi.git',   
     }.freeze
