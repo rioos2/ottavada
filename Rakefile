@@ -19,8 +19,13 @@ end
 desc "Create release"
 task :release, [:version] do |_t, args|
   version = get_version(args)
-
-    $stdout.puts 'Rio/OS release'.colorize(:blue)
-    Release::RioosRelease.new(version).execute
-    Slack::TagNotification.release(version) unless dry_run?
+  $stdout.puts '<= Rio/OS #{version} tagging'.colorize(:yellow).bold
+  Release::RioosRelease.new(version).execute
+  $stdout.puts '=> ✔ Rio/OS Aran '.colorize(:cyan).bold
+  Release::NilavuRelease.new(version).execute
+  $stdout.puts '=> ✔ Rio/OS Nilavu'.colorize(:cyan).bold
+  Release::BeediRelease.new(version).execute
+  $stdout.puts '<= ✔ Rio/OS Beedi'.colorize(:cyan).bol
+  Slack::TagNotification.release(version) unless dry_run?
+  $stdout.puts '<= ✔ Rio/OS #{version} done ! =>'.colorize(:yellow)
 end
