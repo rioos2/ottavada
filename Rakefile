@@ -25,7 +25,7 @@ task :release, [:version] do |_t, args|
   Release::NilavuRelease.new(version).execute
   $stdout.puts '=> ✔ Rio/OS Nilavu'.colorize(:cyan).bold
   Release::BeediRelease.new(version).execute
-  $stdout.puts '<= ✔ Rio/OS Beedi'.colorize(:cyan).bol
+  $stdout.puts '<= ✔ Rio/OS Beedi'.colorize(:cyan).bold
   Slack::TagNotification.release(version) unless dry_run?
   $stdout.puts "<= ✔ Rio/OS #{version} done ! =>".colorize(:yellow)
 end
