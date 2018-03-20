@@ -8,7 +8,7 @@ module Slack
     end
 
     def self.release(version)
-      text = "_#{SharedStatus.user}_ tagged `#{version}`"
+      text = "(ʘ‿ʘ)╯ > _#{SharedStatus.user}_ tagged `#{version}`"
 
       fire_hook(text: text)
     end

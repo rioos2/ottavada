@@ -10,7 +10,9 @@ process.
 1. Install the required dependencies with Bundler:
 
     ```sh
+
     bundle install
+
     ```
 
 1. Several of the tasks require API access to a GitLab instance. We store the
