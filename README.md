@@ -3,7 +3,7 @@
 This project includes several Rake tasks to automate parts of the release
 process.
 
-![Release Bot](https://gitlab.com/rioos/ottavada/raw/master/images/masco.png)
+![Release Bot](https://gitlab.com/rioos/ottavada/raw/2-0-stable/images/ottavada.png)
 
 ## Setup
 
