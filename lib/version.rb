@@ -177,7 +177,7 @@ class Version < String
   def tag_for(version, ee: false)
     version = version.to_ee if ee
 
-    "v#{version}"
+    "#{version}"
   end
 
   def extract_from_version(part, fallback: 0)
