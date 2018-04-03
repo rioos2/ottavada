@@ -7,7 +7,7 @@ module Project
     }.freeze
 
     def self.path
-      "#{group}/poochi"
+      "#{group}/relpoochi"
     end
   end
 end
